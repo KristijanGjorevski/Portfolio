@@ -23,7 +23,7 @@ body {
 .header_container {
     position: fixed;
     height: 100vh;
-    width: 80px;
+    width: 105px;
     background-color: transparent;
     z-index: 99999;
 }
@@ -132,6 +132,7 @@ header {
     border: 1px solid #fff;
     border-radius: 20px;
     color: #fff;
+    transition: all 0.1s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .about_btn:hover {
@@ -237,16 +238,21 @@ video {
 
 
 /*                  second content BEGGINS */
-
+.short_container{
+    width: 100vw;
+    background: repeating-linear-gradient(to right,#000,#808080 1.4px,#000 0.3px,#000 211px);
+}
 .short_about {
     width: 60vw;
     height: auto;
-    margin: 10vh auto;
+    margin: auto;
+    padding: 10vh 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-items: center;
     align-items: center;
     color: #fff;
+    
 }
 
 .short_content {
@@ -271,7 +277,6 @@ video {
     /* grid-area: picture; */
     max-width: 455px;
     height: auto;
-    margin: 3vh auto;
 }
 
 .kiko img {
@@ -294,27 +299,36 @@ video {
 
 
 /*                  projects BEGGINS */
-
+.projects_container{
+    width: 100vw;
+    background: repeating-linear-gradient(to bottom,#000,#808080 1.4px,#000 0.3px,#000 198px);
+}
 .projects {
-    width: 60vw;
+    width: 100vw;
+    margin: auto;
     display: grid;
     grid-template-rows: repeat(3, minmax(200px, 1fr));
-    margin: 10vh auto;
     color: #fff;
+    
+}
+#project-template{
+    transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .projects h2 {
     padding-left: 110px;
 }
 
-#first,
-#second,
-#third {
+.first,
+.second,
+.third {
+    width: 60vw;
+    height: 100%;
+    margin: auto;
     display: grid;
     grid-template-columns: 44% 44%;
     grid-gap: 10%;
     align-items: center;
-    border: 1px solid rgba(22, 22, 22, 0.5);
 }
 
 .examples {
@@ -334,12 +348,16 @@ video {
 /*              skills BEGINS        */
 
 .skills_container {
-    width: 60vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 10vh auto;
+    background: repeating-linear-gradient(to right,#000,#808080 1.4px,#000 0.3px,#000 211px);
+}
+.skills_content{
+    width: 60vw;
+    margin: auto;
 }
 
 .skills_content h2 {
