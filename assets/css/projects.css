@@ -1,4 +1,69 @@
+.projects-container{
+  color: #fff;
+}
 img {
+  margin:auto;
   height: auto;
-  width: 200px;
+  max-width: 418px;
+  cursor: pointer;
+}
+span {
+  display: block;
+}
+
+.main-projects{
+  width: 60vw;
+  margin: 10vh auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  justify-items: center;
+}
+.projects-template{
+  display: grid;
+  grid-template-rows: 5% auto;
+  justify-items: center;
+}
+
+.project-info{
+  margin: 25px auto;
+}
+.project-info h2{
+  margin: 10px auto;
+}
+.project-info p{
+  max-width: 418px;
+  margin: 10px auto;
+}
+.oppinion {
+  display: none;
+}
+
+
+#modalBox{
+  position: fixed;
+  top:0;
+  left:0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.96);
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+}
+#modalImg{
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  left: 40vw;
+}
+#modalText{
+  position: absolute;
+  width: 20vw;
+  top:30vh;
+  left: 15vw;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.061rem;
+  line-height: 115%;
 }

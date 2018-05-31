@@ -8,20 +8,5 @@ window.setTimeout(() => {
 const projects = document.querySelectorAll("#project-template");
 
 projects.forEach(element => {
-    element.addEventListener("mouseover",enterState);
-    element.addEventListener("mouseout",leaveState);
+    element.addEventListener("click",()=> {window.location.href = "projects.php"});
 });
-
-function enterState() {
-
-    //console.log(this);
-    this.style.backgroundColor = "white";
-    this.childNodes[1].style.color = "black";
-}
-
-function leaveState() {
-
-    this.style.backgroundColor = "transparent";
-    this.childNodes[1].style.color = "white";
-    
-}
