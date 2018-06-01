@@ -4,7 +4,7 @@
 img {
   margin:auto;
   height: auto;
-  max-width: 418px;
+  max-width: 350px;
   cursor: pointer;
 }
 span {
@@ -20,7 +20,7 @@ span {
 }
 .projects-template{
   display: grid;
-  grid-template-rows: 5% auto;
+  grid-template-rows: 7% auto;
   justify-items: center;
 }
 
@@ -51,6 +51,8 @@ span {
 }
 #modalImg{
   position: absolute;
+  display: flex;
+  justify-content: center;
   max-width: 100%;
   height: auto;
   margin: auto;
